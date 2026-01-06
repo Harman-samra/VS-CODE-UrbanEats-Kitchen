@@ -3,12 +3,13 @@ set -euo pipefail
 
 # prepare a clean build context
 rm -rf tempdir
-mkdir -p tempdir/templates tempdir/static
+mkdir -p tempdir/templates tempdir/static tempdir/static/images
 
 cp sample_app.py tempdir/.
 cp requirements.txt tempdir/ || true
 cp -r templates/. tempdir/templates/ || true
 cp -r static/. tempdir/static/ || true
+cp -r "Urban Eats Pictures/." tempdir/static/images/ || true
 
 # create a small, reproducible Dockerfile
 cat > tempdir/Dockerfile <<'DOCKERFILE'
