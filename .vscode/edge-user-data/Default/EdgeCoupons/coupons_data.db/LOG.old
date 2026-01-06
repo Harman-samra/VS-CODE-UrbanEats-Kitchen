@@ -1,0 +1,5 @@
+2025/12/11-14:54:02.688 2a7c Creating DB C:\Users\harma\OneDrive\Desktop\Devops Labs\VS CODE UrbanEats Kitchen\.vscode\edge-user-data\Default\EdgeCoupons/coupons_data.db since it was missing.
+2025/12/11-14:54:02.698 2a7c Reusing MANIFEST C:\Users\harma\OneDrive\Desktop\Devops Labs\VS CODE UrbanEats Kitchen\.vscode\edge-user-data\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2025/12/11-14:54:03.225 2228 Level-0 table #5: started
+2025/12/11-14:54:03.233 2228 Level-0 table #5: 672625 bytes OK
+2025/12/11-14:54:03.234 2228 Delete type=0 #3
