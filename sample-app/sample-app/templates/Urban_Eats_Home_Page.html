@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>UrbanEats Kitchen</title> 
+    <style>
+            /* Styles the body of the webpage */
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets the font family */
+                margin: 0; 
+                padding: 0; 
+                color: #5d4037; 
+                background-color: #efebe9; 
+            }
+
+            /* Styles the header section */
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                background-color: #8d6e63;
+                color: #fff;
+            }
+
+            /* Styles the navigation bar */
+            nav {
+                text-align: center;
+                background-color: #6d4c41;
+                padding: 15px 0;
+            }
+
+            /* Styles the navigation buttons */
+            nav button {
+                margin: 0 10px;
+                padding: 15px 120px;
+                background-color: #8d6e63;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 1em;
+                transition: background-color 0.3s;
+            }
+
+            /* Adds hover effect to navigation buttons */
+            nav button:hover {
+                background-color: #6d4c41;
+            }
+
+            /* Styles the main content section */
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 40px;
+            }
+
+            /* Styles the images in the content section */
+            .content img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 15px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Styles the paragraphs in the content section */
+            .content p {
+                font-size: 1.3em;
+                margin: 20px 0;
+                line-height: 1.6;
+            }
+
+            /* Styles the info section in the content */
+            .content .info {
+                max-width: 45%;
+                text-align: center;
+                margin-left: auto;
+            }
+
+            /* Styles the location image */
+            .location img {
+                margin-top: 15px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Styles the opening times section */
+            .opening-times {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            /* Styles the "Book Now" button in the opening times */
+            .opening-times button {
+                padding: 15px 30px;
+                background-color: #8d6e63;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                border-radius: 8px;
+                font-size: 1.2em;
+                transition: background-color 0.3s;
+            }
+
+            /* Adds hover effect to the "Book Now" button */
+            .opening-times button:hover {
+                background-color: #6d4c41;
+            }
+
+            /* Reduces spacing between opening times */
+            .opening-times div p {
+                margin: 5px 0;
+            }
+
+            /* Styles the footer section */
+            footer {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                background-color: #6d4c41;
+                color: #efebe9;
+            }
+
+            /* Styles the footer content */
+            footer div {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            /* Styles the images in the footer */
+            footer img {
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+            }
+        </style>
+</head>
+<body> 
+    <header> 
+        <div class="name-slogan"> 
+            <h1>UrbanEats Kitchen</h1> 
+            <p>Your favourite spot for delicious meals!</p> 
+        </div>
+        <img src="Urban Eats Pictures/Urban Eats Resturant logo.png" alt="UrbanEats Kitchen Logo" style="width: 100px; border-radius: 10px;"> 
+    </header>
+    <nav> 
+        <button>Home</button> 
+        <button>Menu</button> 
+        <button>Book Now</button> 
+        <button>About Us</button> 
+    </nav>
+    <div class="content"> 
+        <img src="Urban Eats Pictures/interior of resturant.jpg" alt="Interior of UrbanEats Kitchen"> 
+        <div class="info"> 
+            <p>Welcome to UrbanEats Kitchen, located in the heart of Birmingham. We serve the finest dishes made with fresh, locally sourced ingredients. Our cozy atmosphere and friendly staff ensure you have a delightful dining experience every time you visit.</p> 
+            <div class="location"> 
+                <p>Location: 140 Bath Row, Birmingham</p> 
+                <img src="Urban Eats Pictures/Map of birmingham.jpg" alt="Map of Birmingham"> 
+            </div>
+            <div class="opening-times"> 
+                <div> <!-- Displays the opening times -->
+                    <p>Opening Times:</p> 
+                    <p>Monday: 10:00 AM – 8:00 PM</p> 
+                    <p>Tuesday: 10:00 AM – 8:00 PM</p> 
+                    <p>Wednesday: 10:00 AM – 8:30 PM</p> 
+                    <p>Thursday: 10:00 AM – 9:00 PM</p> 
+                    <p>Friday: 10:00 AM – 10:00 PM</p> 
+                    <p>Saturday: 9:00 AM – 10:00 PM</p> 
+                    <p>Sunday: Closed</p> 
+                </div>
+                <button>Book Now</button> <!-- Button for booking -->
+            </div>
+        </div>
+    </div>
+    <footer> 
+        <div> 
+            <img src="Urban Eats Pictures/whatapp logo.png" alt="WhatsApp"> 
+            <span>+44 7483885170</span> 
+        </div>
+        <div> 
+            <img src="Urban Eats Pictures/Instagram Logo.png" alt="Instagram"> 
+            <span>@UrbanEats</span> 
+        </div>
+        <div> 
+            <img src="Urban Eats Pictures/Facebook Logo.png" alt="Facebook"> 
+            <span>@UrbanEats Kitchen</span> 
+        </div>
+    </footer>
+</body>
+</html>
