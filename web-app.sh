@@ -9,7 +9,7 @@ cp sample_app.py tempdir/.
 cp requirements.txt tempdir/ || true
 cp -r templates/. tempdir/templates/ || true
 cp -r static/. tempdir/static/ || true
-cp -r "Urban Eats Pictures/." tempdir/static/images/ || true
+cp -r static/images/. tempdir/static/images/ || true
 
 # create a small, reproducible Dockerfile
 cat > tempdir/Dockerfile <<'DOCKERFILE'
