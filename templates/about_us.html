@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - UrbanEats Kitchen</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #5d4037;
+            background-color: #efebe9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #8d6e63;
+            color: #fff;
+            flex-wrap: wrap;
+        }
+
+        .name-slogan {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #6d4c41;
+            padding: 15px 0;
+        }
+
+        nav button {
+            margin: 5px;
+            padding: 12px 20px;
+            background-color: #8d6e63;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+            width: calc(25% - 10px);
+            max-width: 200px;
+            min-width: 120px;
+        }
+
+        nav button:hover {
+            background-color: #6d4c41;
+        }
+
+        #about-btn {
+            background-color: #6d4c41;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-title {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+
+        .about-title h1 {
+            color: #8d6e63;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .about-title p {
+            color: #6d4c41;
+            font-size: 1.1em;
+        }
+
+        .image-section {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-container {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0 15px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: block;
+        }
+
+        .image-text {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0 15px;
+        }
+
+        .image-text p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 15px 0 0 0;
+            text-align: center;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #6d4c41;
+            color: #efebe9;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        footer div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+            min-width: 150px;
+            justify-content: center;
+        }
+
+        footer img {
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        /* Tablet Styles (768px and up) */
+        @media (min-width: 768px) {
+            .about-title h1 {
+                font-size: 2.3em;
+            }
+
+            .about-title p {
+                font-size: 1.2em;
+            }
+
+            .image-section {
+                flex-wrap: nowrap;
+                gap: 30px;
+            }
+
+            .image-container {
+                flex: 0 0 40%;
+                max-width: 40%;
+                padding: 0;
+            }
+
+            .image-text {
+                flex: 0 0 55%;
+                max-width: 55%;
+                padding: 0;
+            }
+
+            .image-text p {
+                font-size: 1.1em;
+                text-align: left;
+            }
+
+            nav button {
+                padding: 15px 25px;
+                width: auto;
+            }
+        }
+
+        /* Desktop Styles (1024px and up) */
+        @media (min-width: 1024px) {
+            .content {
+                padding: 40px;
+            }
+
+            .about-title h1 {
+                font-size: 2.5em;
+            }
+
+            .image-container {
+                flex: 0 0 35%;
+                max-width: 35%;
+            }
+
+            .image-text {
+                flex: 0 0 60%;
+                max-width: 60%;
+            }
+
+            .image-text p {
+                font-size: 1.2em;
+            }
+
+            nav button {
+                padding: 15px 40px;
+                margin: 0 10px;
+            }
+
+            footer div {
+                justify-content: flex-start;
+                min-width: auto;
+            }
+        }
+
+        /* Small Mobile Styles (480px and below) */
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .name-slogan {
+                width: 100%;
+            }
+
+            header img {
+                width: 80px;
+            }
+
+            nav button {
+                width: calc(50% - 10px);
+                margin: 5px;
+                padding: 10px 15px;
+                font-size: 0.9em;
+            }
+
+            .about-title h1 {
+                font-size: 1.8em;
+            }
+
+            .about-title p {
+                font-size: 1em;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .image-text p {
+                font-size: 1em;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 15px;
+            }
+
+            footer div {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Very Small Mobile Styles (360px and below) */
+        @media (max-width: 360px) {
+            nav button {
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .about-title h1 {
+                font-size: 1.6em;
+            }
+
+            .about-title p {
+                font-size: 0.9em;
+            }
+
+            .image-text p {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="name-slogan">
+            <h1>UrbanEats Kitchen</h1>
+            <p>Your favourite spot for delicious meals!</p>
+        </div>
+        <img src="logo.jpeg" alt="UrbanEats Kitchen Logo">
+    </header>
+    
+    <nav>
+        <button onclick="window.location.href='templates/Urban_Eats_Home_Page.html'">Home</button>
+        <button onclick="window.location.href='/menu'">Menu</button>
+        <button onclick="window.location.href='/book'">Book Now</button>
+        <button id="about-btn">About Us</button>
+    </nav>
+    
+    <div class="content">
+        <div class="about-content">
+            <div class="about-title">
+                <h1>About Us</h1>
+                <p>Welcome to UrbanEats Kitchen - Your culinary destination in Birmingham</p>
+            </div>
+            
+            <div class="image-section">
+                <div class="image-container">
+                    <img src="Map.png" alt="Map of Urban Eats Location" title="UrbanEats Location">
+                </div>
+                <div class="image-text">
+                    <p>UrbanEats Kitchen is conveniently located at 140 Bath Row, right in the heart of Birmingham’s vibrant city centre. Our spot is easily accessible by foot, public transport, or car, making it the perfect place to stop by whether you’re grabbing a quick bite or settling in for a relaxed meal. The surrounding area is lively yet welcoming, offering a blend of city energy and local charm that adds to the overall dining experience.</p>
+                </div>
+            </div>
+            <div class="image-section">
+                <div class="image-container">
+                    <img src="cook.jpeg" alt="UrbanEats Cooks in the Kitchen" title="UrbanEats Cooks">
+                </div>
+                <div class="image-text">
+                    <p>UrbanEats Kitchen is proudly family-run, with roots tracing back to South Asia, and that heritage shines through in the flavours we create. While our menu features a wide range of modern dishes, we blend in subtle South Asian influences—from handcrafted spice mixes to traditional cooking methods passed down through generations. This unique fusion adds warmth, depth, and authenticity to our food, giving every dish a personal touch that reflects our family’s culture and passion for great cooking.</p>
+                </div>
+            </div>
+            <div class="image-section">
+                <div class="image-container">
+                    <img src="restaurant.jpeg" alt="UrbanEats Kitchen Interior" title="UrbanEats Kitchen Interior">
+                </div>
+                <div class="image-text">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="logo.jpeg" alt="WhatsApp">
+            <span>+44 7483885170</span>
+        </div>
+        <div>
+            <img src="instagram.jpeg" alt="Instagram">
+            <span>@UrbanEats</span>
+        </div>
+        <div>
+            <img src="facebook.jpeg" alt="Facebook">
+            <span>@UrbanEats Kitchen</span>
+        </div>
+    </footer>
+</body>
+</html>
