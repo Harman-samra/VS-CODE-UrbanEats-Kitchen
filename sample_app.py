@@ -6,5 +6,9 @@ sample = Flask(__name__)
 def main():
     return render_template("Urban_Eats_Home_Page.html")
 
+@sample.route("/about")
+def about():
+    return render_template("about_us.html")
+
 if __name__ == "__main__":
     sample.run(host="0.0.0.0", port=5000)
