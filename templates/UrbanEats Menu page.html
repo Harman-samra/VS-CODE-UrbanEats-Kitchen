@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UrbanEats Kitchen | Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f0ed;
+      color: #3b2b2b;
+    }
+
+    /* Header */
+    header {
+      background-color: #8b6351;
+      color: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-title {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .logo-title h1 {
+      font-size: 28px;
+    }
+
+    .logo-title p {
+      font-size: 14px;
+    }
+
+    nav {
+      margin-top: 15px;
+      background-color: #754d3a;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 30px;
+      background-color: #8b6351;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #a8775c;
+    }
+
+    main {
+      padding: 30px 40px 60px;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .menu-section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .menu-section h3 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #f0d8c5;
+      padding-bottom: 5px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 12px;
+    }
+
+    .menu-item-name {
+      font-weight: bold;
+    }
+
+    .menu-item-price {
+      font-weight: bold;
+      color: #8b6351;
+      margin-left: 10px;
+    }
+
+    .menu-item-desc {
+      font-size: 14px;
+      color: #6b5555;
+      margin-top: 4px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #8b6351;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ffe7d1;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-title">
+      <h1>UrbanEats Kitchen</h1>
+      <p>Your favourite spot for delicious meals!</p>
+    </div>
+    <img src="images/UrbanEats Logo.png" alt="Interior of UrbanEats Kitchen" width="100">
+
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="#book">Book Now</a>
+    <a href="#about">About Us</a>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <h2 class="section-title">Our Menu</h2>
+
+    <div class="menu-grid">
+      <!-- Starters -->
+      <section class="menu-section" id="starters">
+        <h3>Starters</h3>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Garlic Herb Bruschetta</span>
+            <p class="menu-item-desc">Toasted sourdough topped with marinated tomatoes, basil and olive oil.</p>
+          </div>
+          <span class="menu-item-price">£6.50</span>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Creamy Mushroom Soup</span>
+            <p class="menu-item-desc">Wild mushrooms simmered with cream, thyme and truffle oil.</p>
+          </div>
+          <span class="menu-item-price">£5.95</span>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Crispy Calamari</span>
+            <p class="menu-item-desc">Lightly fried squid rings served with lemon and garlic mayo.</p>
+          </div>
+          <span class="menu-item-price">£7.25</span>
+        </div>
+      </section>
+
+      <!-- Mains -->
+      <section class="menu-section" id="mains">
+        <h3>Mains</h3>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Chargrilled Chicken Burger</span>
+            <p class="menu-item-desc">Free-range chicken breast with cheddar, lettuce and house sauce, served with fries.</p>
+          </div>
+          <span class="menu-item-price">£13.95</span>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">UrbanEats Veggie Bowl</span>
+            <p class="menu-item-desc">Roasted seasonal vegetables, quinoa, hummus and tahini dressing.</p>
+          </div>
+          <span class="menu-item-price">£12.50</span>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Pan-Seared Salmon</span>
+            <p class="menu-item-desc">Served with crushed new potatoes, tenderstem broccoli and lemon butter sauce.</p>
+          </div>
+          <span class="menu-item-price">£15.95</span>
+        </div>
+      </section>
+
+      <!-- Desserts -->
+      <section class="menu-section" id="desserts">
+        <h3>Desserts</h3>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Chocolate Fudge Brownie</span>
+            <p class="menu-item-desc">Warm brownie with vanilla ice cream and chocolate sauce.</p>
+          </div>
+          <span class="menu-item-price">£6.25</span>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Lemon Cheesecake</span>
+            <p class="menu-item-desc">Zesty baked cheesecake on a crunchy biscuit base.</p>
+          </div>
+          <span class="menu-item-price">£6.50</span>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Sticky Toffee Pudding</span>
+            <p class="menu-item-desc">Classic sponge with toffee sauce and clotted cream.</p>
+          </div>
+          <span class="menu-item-price">£6.75</span>
+        </div>
+      </section>
+
+      <!-- Drinks -->
+      <section class="menu-section" id="drinks">
+        <h3>Drinks</h3>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Fresh Orange Juice</span>
+            <p class="menu-item-desc">Pressed to order.</p>
+          </div>
+          <span class="menu-item-price">£3.50</span>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">House Lemonade</span>
+            <p class="menu-item-desc">Homemade with fresh lemons and mint.</p>
+          </div>
+          <span class="menu-item-price">£3.25</span>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Americano / Latte / Cappuccino</span>
+            <p class="menu-item-desc">Locally roasted coffee beans.</p>
+          </div>
+          <span class="menu-item-price">from £2.80</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 UrbanEats Kitchen. All rights reserved.</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="menu.html">Menu</a> |
+      <a href="#book">Book a Table</a> |
+      <a href="#about">Contact Us</a>
+    </p>
+  </footer>
+
+</body>
+</html>
