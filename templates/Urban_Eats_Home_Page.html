@@ -49,6 +49,12 @@
                 background-color: #6d4c41;
             }
 
+            /* Styles the active home button */
+            #home-btn {
+                background-color: #6d4c41;
+                font-weight: bold;
+            }
+
             /* Styles the main content section */
             .content {
                 display: flex;
@@ -149,9 +155,9 @@
         <img src="{{ url_for('static', filename='images/urban-eats-restaurant-logo.png') }}" alt="UrbanEats Kitchen Logo" style="width: 100px; border-radius: 10px;"> 
     </header>
     <nav> 
-        <button onclick="window.location.href='/'">Home</button> 
-        <button>Menu</button> 
-        <button>Book Now</button> 
+        <button id="home-btn" onclick="window.location.href='/'">Home</button> 
+        <button onclick="window.location.href='/menu'">Menu</button> 
+        <button onclick="window.location.href='/book'">Book Now</button> 
         <button onclick="window.location.href='/about'">About Us</button> 
     </nav>
     <div class="content"> 
